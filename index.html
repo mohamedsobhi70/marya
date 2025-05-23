@@ -179,7 +179,7 @@
 
         <!-- Services Section  -->
 
-        <section class="pt-[63px] pb-[125px] scroll-mt-20 section-item" id="services">
+        <div class="pt-[63px] pb-[125px] scroll-mt-20 section-item" id="services">
             <div class="container relative">
                 <button class="absolute top-1/2 -translate-y-1/2 z-10 size-12 shrink-0 left-full  prev-service">
                     <img src="assets/images/icons/chevron-right.svg" width="48" height="48" alt="chevron">
@@ -233,14 +233,58 @@
                         alt="chevron">
                 </button>
             </div>
-        </section>
+        </div>
         <!-- End Section  -->
 
         <!-- ========================================================== -->
 
-        <section class="hero-section section-item">
-            <div class="container">
+        <section class="section-item pb-[187px]" id="gallery">
+            <div class="container bg-[#FFF9FF] pt-[44px] flex flex-col gap-10">
+                <header class="flex flex-col gap-2">
+                    <h2
+                        class="text-center text-[45px] leading-[130%] font-bold flex items-baseline text-[#422A3C] gap-3 justify-center -tracking-[1%]">
+                        <img src="assets/images/icons/section-title-rect.svg" width="52" height="19" alt="rect icon">
+                        <span class="text-[#99519D] ">
+                            تحميل
+                        </span>
+                        التطبيق
+                    </h2>
+                    <p class="text-center text-xl text-[#555555] leading-[30px]">
+                        يوفر ماي كوافير صالونات وخدمات متنوعة للعناية بكي
+                    </p>
+                </header>
 
+                <div class="grid grid-cols-3 gap-20">
+                    <div>
+                        <img src="assets/images/hand.png" width="498" height="646" alt="hand">
+                    </div>
+                    <div class="flex items-center justify-between gap-8 col-span-2 pe-6">
+                        <button
+                            class="shrink-0 prev-gallery size-[52px] rounded-full inline-flex justify-center items-center bg-white text-[#422A3C] rotate-180 hover:bg-[#99519D] hover:text-white transition-colors duration-300 ease-in-out">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99999 16L20 26L21.4 24.6L12.8 16L21.4 7.4L20 6L9.99999 16Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                        <div class="gallery-slider owl-carousel owl-theme max-w-[80%]">
+                            <div class="item">
+                                <img src="assets/images/gallery.png" width="126" height="96" alt="services">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/gallery.png" width="126" height="96" alt="services">
+                            </div>
+                        </div>
+                        <button
+                            class="shrink-0 next-gallery size-[52px] rounded-full inline-flex justify-center items-center bg-white text-[#422A3C] hover:bg-[#99519D] hover:text-white transition-colors duration-300 ease-in-out">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99999 16L20 26L21.4 24.6L12.8 16L21.4 7.4L20 6L9.99999 16Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -309,44 +353,43 @@
                             </li>
                             <li class="flex items-center gap-3.5 ">
                                 <strong>الهاتف</strong>
-                                <a href="tel:+966123000000">(+966) 123 - 0000 - 000</a>
+                                <a href="tel:+966123000000" dir="ltr">(+966) 123 - 0000 - 000</a>
 
                             </li>
                         </ul>
                     </div>
-                    <div class="flex flex-col gap-[21px] text-white">
+                    <div class="flex flex-col gap-[30px] text-white">
                         <strong class="text-[22px] leading-[140%]">تحميل التطبيق</strong>
-                        <ul class="flex flex-col gap-3.5">
-                            <li class="flex items-center gap-3.5 ">
-                                <strong>العنوان</strong>
-                                حي النسيم, 50D 2 2000 KSA
+                        <ul class="flex flex-col gap-5">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/googleapp.png" width="130" height="46" alt="google play">
+                                </a>
                             </li>
-                            <li class="flex items-center gap-3.5 ">
-                                <strong>البريد</strong>
-                                <a href="mailto:MYcoiffeur@service.com">MYcoiffeur@service.com</a>
-                            </li>
-                            <li class="flex items-center gap-3.5 ">
-                                <strong>الهاتف</strong>
-                                <a href="tel:+966123000000">(+966) 123 - 0000 - 000</a>
-
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/appstore.png" width="130" height="46" alt="app store">
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="flex flex-col gap-[21px] text-white">
                         <strong class="text-[22px] leading-[140%]">روابط هامة </strong>
                         <ul class="flex flex-col gap-3.5">
-                            <li class="flex items-center gap-3.5 ">
-                                <strong>العنوان</strong>
-                                حي النسيم, 50D 2 2000 KSA
+                            <li>
+                                <a href="#">تعريف بنا</a>
                             </li>
-                            <li class="flex items-center gap-3.5 ">
-                                <strong>البريد</strong>
-                                <a href="mailto:MYcoiffeur@service.com">MYcoiffeur@service.com</a>
+                            <li>
+                                <a href="#"> تحميل التطبيق</a>
                             </li>
-                            <li class="flex items-center gap-3.5 ">
-                                <strong>الهاتف</strong>
-                                <a href="tel:+966123000000">(+966) 123 - 0000 - 000</a>
-
+                            <li>
+                                <a href="#"> خدماتنا</a>
+                            </li>
+                            <li>
+                                <a href="#"> المدونة</a>
+                            </li>
+                            <li>
+                                <a href="#"> تواصل معنا</a>
                             </li>
                         </ul>
                     </div>

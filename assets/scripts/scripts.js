@@ -67,3 +67,22 @@ $('.next-service').click(function () {
 $('.prev-service').click(function () {
     $('.services-slider').trigger('prev.owl.carousel');
 });
+
+
+$('.gallery-slider').owlCarousel({
+    nav: false,
+    margin: 53,
+    items: 1,
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    rtl: true,
+});
+
+$('.next-gallery').click(function () {
+    $('.gallery-slider').trigger('next.owl.carousel');
+});
+
+$('.prev-gallery').click(function () {
+    $('.gallery-slider').trigger('prev.owl.carousel');
+});
