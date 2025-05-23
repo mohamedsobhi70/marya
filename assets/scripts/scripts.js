@@ -104,3 +104,4 @@ $('.next-testimonials').click(function () {
 $('.prev-testimonials').click(function () {
     $('.testimonials-slider').trigger('prev.owl.carousel');
 });
+
