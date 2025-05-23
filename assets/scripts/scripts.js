@@ -86,3 +86,21 @@ $('.next-gallery').click(function () {
 $('.prev-gallery').click(function () {
     $('.gallery-slider').trigger('prev.owl.carousel');
 });
+
+$('.testimonials-slider').owlCarousel({
+    nav: false,
+    margin: 53,
+    items: 1,
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    rtl: true,
+});
+
+$('.next-testimonials').click(function () {
+    $('.testimonials-slider').trigger('next.owl.carousel');
+});
+
+$('.prev-testimonials').click(function () {
+    $('.testimonials-slider').trigger('prev.owl.carousel');
+});
