@@ -31,7 +31,6 @@ document.querySelectorAll(".nav-item").forEach((item) => {
 })
 
 
-
 $('.services-slider').owlCarousel({
     nav: false,
     margin: 53,
@@ -40,7 +39,7 @@ $('.services-slider').owlCarousel({
     rtl: true,
     responsive: {
         0: {
-            items: 1, margin: 20
+            items: 2, margin: 20
         },
         480: {
             items: 2, margin: 20,
