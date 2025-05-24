@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+
+    $(".mobile-menu-btn").click(function () {
+        $(".mobile-menu").addClass("show");
+    });
+    $(".mobile-menu-close").click(function () {
+        $(".mobile-menu").removeClass("show");
+    });
+
     const sections = document.querySelectorAll('.section-item');
     const navLinks = document.querySelectorAll('.nav-link');
 
@@ -23,6 +32,7 @@ $(document).ready(function () {
     document.querySelectorAll(".nav-item").forEach((item) => {
 
         item.addEventListener("click", () => {
+            $(".mobile-menu").removeClass("show");
             document.querySelectorAll(".nav-item").forEach((item) => {
                 item.classList.remove("active")
             })
@@ -43,7 +53,7 @@ $(document).ready(function () {
 
     const count = $('.hero-slider').find('.item').length;
     for (let i = 0; i < count; i++) {
-        $('.hero-custom-dots').append(`<button class="dot" data-dot="${i}"></button>`);
+        $('.hero-custom-dots').append(`<button class="dot" data-dot="${i}" aria-label="Go to slide ${i + 1}"></button>`);
     }
     // On dot click, go to slide
     $('.hero-custom-dots .dot').on('click', function () {
