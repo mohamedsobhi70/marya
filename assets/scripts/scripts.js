@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     $(".mobile-menu-btn").click(function () {
         $(".mobile-menu").addClass("show");
     });
@@ -11,23 +10,23 @@ $(document).ready(function () {
     const sections = document.querySelectorAll('.section-item');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
+    // window.addEventListener('scroll', () => {
+    //     let current = '';
+    //     sections.forEach(section => {
+    //         const sectionTop = section.offsetTop;
+    //         const sectionHeight = section.clientHeight;
+    //         if (scrollY >= (sectionTop - sectionHeight / 3)) {
+    //             current = section.getAttribute('id');
+    //         }
+    //     });
 
-        navLinks.forEach(link => {
-            link.parentElement.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.parentElement.classList.add('active');
-            }
-        });
-    });
+    //     navLinks.forEach(link => {
+    //         link.parentElement.classList.remove('active');
+    //         if (link.getAttribute('href') === `#${current}`) {
+    //             link.parentElement.classList.add('active');
+    //         }
+    //     });
+    // });
 
     document.querySelectorAll(".nav-item").forEach((item) => {
 
